@@ -1,0 +1,189 @@
+@charset "utf-8";
+/****** 2010-06-21
+Theme Name: junType v3.0
+Theme URI: http://junne.net/
+Description: 主要是为日后做博客主题而构建的框架，以后我的主题都是基于这个框架来搭建 :)
+Version: 3.0
+Author: jun
+Author URI: http://junne.net/
+*/
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0; }
+fieldset, img { border:0; }
+li { list-style:none; }
+i { font-style:normal; }
+body, td, button, select, input, textarea { color:#202024; font:12px/1.5 Tahoma, Helvetica, Arial, "宋体", sans-serif; }
+.clearfix:after { content: '\0020'; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+a, a:visited {cursor:pointer; color:#202024; text-decoration:none; outline:none;}
+a:hover { text-decoration:underline; color:#777; text-decoration:none;}
+/*end reset*/
+
+/*layout*/
+.junP, .junH, .junC, .junF { margin-left:auto; margin-right:auto; }
+.jMain { float:left; width:100%; min-height:1px; }
+.jWrap { position:relative; }
+.jSide, .jExtra { float:left; position:relative; z-index:1; }
+.jLay:after, .jWrap:after, .jSide:after, .jExtra:after { content:'\0020'; display:block; height:0; clear:both; }
+.jLay, .jWrap, .jSide, .jSide { zoom: 1; }
+/*end layout*/
+
+body { background:#fff; }
+.junHIn, .junC, .jCopy,.junB {width:1000px;margin:0 auto;}
+/* head */
+.junH {height:40px;background:url(images/nav_bg.png) repeat-x 0 0;}
+.junHIn{text-align:center;}
+.jLogo {color:#fff; font:600 24px/40px Tahoma, "黑体";float:left;height:40px;width:100px;margin-right:50px;background:url(images/main_bg.png) no-repeat 0 -137px;}
+.jLogo a, .jLogo a:visited { color:#fff; border-bottom:none;text-indent:-999em;display:block;height:40px;}
+.jNav{float:left;padding-top:1px;height:39px;}
+
+.jMenu{height:37px;border-left:1px solid #ffa7b9;border-right:1px solid #bd2141;}
+.jMenu li {float:left;border-right:1px solid #ffa7b9;border-left:1px solid #bd2141;}
+.jMenu a {display:block;height:37px;line-height:37px;width:90px;text-align:center; _float:left;color:#fff;font-size:14px;font-weight:bold;background:url(images/main_bg.png) no-repeat 0 -178px;}
+.jMenu a:hover {text-decoration:none;background-position:0 -218px;}
+.jMenu .current a{background-position:0 -218px;}
+
+.jSearch {height:37px;float:right;}
+.jSearch form{}
+.jSearch input{border:1px solid #bd2141;color:#fff;margin-top:7px;}
+.jSearch .jSKey {width:180px;padding-left:25px;height:21px;background:#fd98ae url(images/main_bg.png) no-repeat 1px -266px;}
+
+.jName{height:50px;background:url(images/name_bg.png) no-repeat 0 20px;}
+.jName li{width:300px;padding-top:15px;}
+.jName li b{background:#fff;padding:5px 10px;font:600 18px/1.0 Tahoma, "黑体";}
+.jName .jBFName{float:left;padding-right:200px;text-align:right;color:#6cc1ff;}
+.jName .jGFName{float:right;padding-left:200px;text-align:left;color:#ff6b88;}
+
+.junB{height:130px;background:url(images/banner.jpg) no-repeat;}
+.index .junB{background-position:0 0;}
+.gfArt .junB{background-position:0 -260px;}
+.bfArt .junB{background-position:0 -130px;}
+.jPage .junB{background-position:0 -390px;}
+
+.index .junC{background:url(images/index_bg.png) repeat-y 0 0;overflow:hidden;zoom:1;}
+.gfArt .junC{background:url(images/index_bg.png) repeat-y -506px 0;overflow:hidden;zoom:1;padding-top:15px;}
+.bfArt .junC{background:url(images/index_bg.png) repeat-y 506px 0;overflow:hidden;zoom:1;padding-top:15px;}
+.jPage .junC{background:none;}
+
+.gfArt .jPost,.bfArt .jPost,.jPage .jPost{width:auto;float:none;}
+.gfArt .jPost .jPTitle{background:url(images/art_title.png) no-repeat left 0;}
+.bfArt .jPost .jPTitle{background:url(images/art_title.png) no-repeat right -79px;}
+/* end head */
+.junBot{overflow:hidden;background:#202024;color:#888;}
+.junBot .jSide{width:1000px;margin:0 auto;float:none;padding:10px 0;}
+.junBot .jBox{width:190px;float:left;padding:0 5px;}
+/* foot */
+.junF {color:#ccc;overflow:hidden;background:#26262a;border-top:1px solid #2e2e33;}
+.jCopy {line-height:23px;}
+/* end foot */
+
+.junBot a, .junBot a:visited,.junF a, .junF a:visited {color:#777;}
+.junBot a:hover,.junF a:hover {color:#999;}
+
+/* post */
+.jPost {width:355px;position:relative;padding-bottom:10px;}
+.jPost h2 {height:45px;color:#000; font:600 14px/45px Tahoma, Geneva, sans-serif, "宋体" }
+.jPostCont {line-height:23px;}
+.jPostCont p {margin:5px 0;}
+.jPostInfo {position:absolute;width:140px;top:20px;}
+.jPostInfo li {margin-right:10px;clear:both;}
+.jPostInfo .jPAuthor{width:48px;height:48px;padding:1px;border:1px solid #ccc;overflow:hidden;margin-bottom:2px;}
+.jPostInfo .jPAuthor img{width:48px;height:48px;}
+
+.jPMore{padding:5px 0;}
+.jPMore a,.jPMore a:visited{text-decoration:underline;}
+.jWarn { padding:10px; border:1px solid #ffe400; color:#000; background:#fdfdef; }
+.jPostCont ul, .jPostCont ol { margin:5px 0; }
+.jPostCont ul li { list-style:disc inside none; }
+.jPostCont ol li { list-style:decimal inside none; }
+.jImg { display:inline-block; padding:5px; border:1px solid #333; background:#eee; margin:5px auto; }
+.jTags { padding:10px 20px; }
+.jTags a { margin-right:10px; }
+.noData{line-height:25px;font-size:14px;font-weight:bold;text-align:center;}
+
+.index .jPostCont{height:135px;overflow:hidden;}
+
+.jBoy{float:left;width:495px;}
+.jGirl{float:right;width:495px;}
+
+.jPTitle{height:68px;background:url(images/main_bg.png) no-repeat;}
+.jPTitle .jPDate{height:23px;line-height:23px;font-weight:bold;color:#fff;}
+
+.jBF a, .jBF a:visited {color:#6cc1ff; border:none; }
+.jBF a:hover {color:#097fd5; }
+
+.jGF a, .jGF a:visited {color:#ff6b88; border:none; }
+.jGF a:hover {color:#ce0c32; }
+
+.jBF{padding-right:140px;color:#6cc1ff;}
+.jGF p{color:#7ec1f2;}
+.jBF .jPostInfo{right:0;}
+.jBF .jPostInfo li{text-align:left;}
+.jBF .jPTitle{background-position:right 0;text-align:right;padding-right:20px;}
+.jBF .jPostCont{padding-right:20px;}
+
+.jGF{padding-left:140px;color:#ff6b88;}
+.jGF p{color:#f8a6b6;}
+.jGF .jPostInfo{left:0;}
+.jGF .jPostInfo li{text-align:right;}
+.jGF .jPTitle{background-position:0 -68px;padding-left:20px;}
+.jGF .jPostInfo .jPAuthor{float:right;}
+.jGF .jPostCont{padding-left:20px;}
+
+.jBF .jPMore{text-align:left;}
+.jGF .jPMore{text-align:right;}
+
+/* end post */
+
+/* sideBox */
+.jBox {}
+.jBox h3 { color:#f1f1f1; height:23px; padding:5px 0; font-size:14px; }
+.junList li { line-height:23px; }
+.junList li ul { padding-left:15px; }
+/* end sideBox */
+
+/* pages */
+.jPages {padding:10px; zoom:1;clear:both;width:290px;margin:0 auto;}
+.jPages ul { font-family:Arial; }
+.jPages li { margin:0 5px 5px 0; float:left; }
+.jPages li a { width:23px; height:23px; display:inline-block; text-align:center; text-decoration:none; line-height:23px; background:#fff; color:#000; border:1px solid #ccc;; }
+.jPages li a:hover {border:1px solid #fbb4c3;background:#fdeaee; }
+.jPages li.current a { border:1px solid #b0dcfc;background:#edf7fe;}
+/* end pages */
+
+/* comment */
+.gfArt #comments{padding-left:20px;}
+.bfArt #comments{padding-right:20px;}
+
+#comment_form .text,#comment_form textarea {border:1px solid #ddd;background:#fff;}
+ol.comment-list li {border-bottom:1px solid #f1f1f1;background: #fff;border-right:1px solid #f1f1f1;}
+ol.comment-list li.comment-level-odd {background: #fff; }
+ol.comment-list li.comment-level-even {background: #fff; }
+ol.comment-list li.comment-by-author {background: #f9f9f9; }
+
+
+#comments { margin-top: 20px; }
+#comments h4 { font-size: 14px; font-weight: bold; padding:10px 0; }
+ol.comment-list, ol.comment-list ol { margin: 0; list-style: none; }
+ol.comment-list ol { padding-top: 10px; }
+ol.comment-list li { margin: 0; padding-bottom: 10px; }
+ol.comment-list li { padding: 10px 15px; margin-top: 10px; overflow: hidden;}
+ol.connent-list li.comment-even { background:none; }
+ol.comment-list li .comment-reply { text-align: right; }
+ol.comment-list li .comment-reply a { font-size: 11px; border: none; }
+.comment-meta { padding-bottom: 8px; /*border-bottom: 1px dashed #eee;*/ color: #999; font-size: 11px; }
+.comment-author { display: block; font-size: 15px; color: #ccc; }
+.comment-author cite.fn { font-style: normal;font-size:12px;font-weight:bold;}
+.comment-body { overflow: hidden; }
+img.avatar { /*display: none;*/ float: left; margin: 6px 10px 0 0; }
+.respond { margin-top: 20px; }
+.respond p { padding:5px 0; clear:both; }
+ol.comment-list li .respond { border-top: 1px solid #ddd; padding-top: 10px; }
+#comment_form { padding-right: 8px; }
+.respond .cancel-comment-reply { float: right; font-size: 11px; }
+#comment_form label { font-size: 12px; display: block; line-height:23px; }
+#comment_form label .required { color: #C04E37; padding-left: 5px; font-size: 14px; }
+#comment_form .text {width:100%; padding:5px 2px; }
+#comment_form textarea {width:100%; height: 120px; padding:5px 2px; }
+#comment_form .submit {color:#000; height:30px; width:150px; cursor:pointer; }
+/* end comment */
